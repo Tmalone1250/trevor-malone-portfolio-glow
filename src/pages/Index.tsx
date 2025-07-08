@@ -21,10 +21,10 @@ const Index = () => {
               TM
             </div>
             <p className="text-muted-foreground mb-4">
-              Full-Stack Developer & Digital Solutions Architect
+              Full Stack Software, AI, & Blockchain Developer | Digital Solutions Architect
             </p>
             <p className="text-sm text-muted-foreground">
-              © 2024 Trevor Malone. All rights reserved.
+              © 2025 Trevor Malone. All rights reserved.
             </p>
           </div>
         </div>

@@ -101,7 +101,7 @@ export function HeroSection() {
                                     </h1>
                                     <p
                                         className="mx-auto mt-8 max-w-2xl text-balance text-xl text-muted-foreground">
-                                        Full-Stack Developer & Digital Solutions Architect crafting exceptional web experiences with modern technologies.
+                                        Full Stack Software, AI, & Blockchain Developer | Digital Solutions Architect crafting exceptional web experiences with modern technologies.
                                     </p>
                                 </AnimatedGroup>
 

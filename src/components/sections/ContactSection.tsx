@@ -6,7 +6,42 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
+import { useState } from 'react';
+
 export function ContactSection() {
+  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccess(false);
+    setError('');
+    try {
+      const res = await fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || 'Failed to send message');
+      }
+      setSuccess(true);
+      setForm({ name: '', email: '', subject: '', message: '' });
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message || 'Failed to send message');
+      } else {
+        setError('Failed to send message');
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-24 bg-muted/30">
       <div className="mx-auto max-w-7xl px-6">
@@ -39,7 +74,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="font-medium">Email</div>
-                    <div className="text-muted-foreground">trevor.malone@example.com</div>
+                    <div className="text-muted-foreground">malonetrevor16@gmail.com</div>
                   </div>
                 </motion.div>
 
@@ -53,7 +88,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="font-medium">LinkedIn</div>
-                    <div className="text-muted-foreground">linkedin.com/in/trevormalone</div>
+                    <div className="text-muted-foreground">https://www.linkedin.com/in/trevor-malone-70271b283/</div>
                   </div>
                 </motion.div>
 
@@ -67,7 +102,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="font-medium">Location</div>
-                    <div className="text-muted-foreground">San Francisco, CA</div>
+                    <div className="text-muted-foreground">Austin, Tx., USA</div>
                   </div>
                 </motion.div>
               </div>
@@ -77,19 +112,25 @@ export function ContactSection() {
           <AnimatedGroup preset="blur-slide">
             <div className="bg-background rounded-2xl border p-8">
               <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                {success && (
+                  <div className="text-green-600 font-medium">Message sent successfully!</div>
+                )}
+                {error && (
+                  <div className="text-red-600 font-medium">{error}</div>
+                )}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
                       Name
                     </label>
-                    <Input id="name" placeholder="Your name" />
+                    <Input id="name" placeholder="Your name" value={form.name} onChange={e => setForm({ ...form, name: e.target.value })} />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium mb-2">
                       Email
                     </label>
-                    <Input id="email" type="email" placeholder="your@email.com" />
+                    <Input id="email" type="email" placeholder="your@email.com" value={form.email} onChange={e => setForm({ ...form, email: e.target.value })} />
                   </div>
                 </div>
                 
@@ -97,7 +138,7 @@ export function ContactSection() {
                   <label htmlFor="subject" className="block text-sm font-medium mb-2">
                     Subject
                   </label>
-                  <Input id="subject" placeholder="Project inquiry" />
+                  <Input id="subject" placeholder="Project inquiry" value={form.subject} onChange={e => setForm({ ...form, subject: e.target.value })} />
                 </div>
                 
                 <div>
@@ -108,11 +149,13 @@ export function ContactSection() {
                     id="message" 
                     placeholder="Tell me about your project..."
                     className="min-h-[120px]"
+                    value={form.message}
+                    onChange={e => setForm({ ...form, message: e.target.value })}
                   />
                 </div>
                 
-                <Button size="lg" className="w-full">
-                  Send Message
+                <Button size="lg" className="w-full" type="submit" disabled={loading}>
+                  {loading ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </div>

@@ -5,39 +5,42 @@ import { TextEffect } from '@/components/ui/text-effect';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight } from 'lucide-react';
+import mediaImg from '@/components/assets/media.png';
+import media2Img from '@/components/assets/media2.png';
+import media3Img from '@/components/assets/og-image.png';
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include real-time inventory, payment processing, and admin dashboard.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    title: "Leno AI",
+    description: "Developed Leno AI, an open-source, modular multi-agent framework for building and testing advanced AI systems. It empowers developers and researchers to orchestrate intelligent agents, integrating with tools like Google's Agent Development Kit (ADK) and supporting real-world API connections. Leno AI is designed for educational purposes, fostering community contribution to accelerate innovation in multi-agent AI. (https://lenoai.dev, https://github.com/tmalone1250/lenoai)",
+    image: "https://github.com/Tmalone1250/lenoai/blob/main/media/logo.jpg?raw=true",
+    tags: ["React", "Node.js", "PostgreSQL", "Python", "FastAPI", "Flask", "TailwindCSS", "Google ADK", "API", "AI Agnets", "Web3"],
     status: "Live",
-    link: "#"
+    link: "https://lenoai.dev"
   },
   {
-    title: "Task Management SaaS",
-    description: "Collaborative project management tool with real-time updates, team collaboration features, and advanced analytics dashboard.",
-    image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-    tags: ["Vue.js", "Express", "MongoDB", "Socket.io"],
-    status: "In Development",
-    link: "#"
+    title: "LENOAI Stake Rewards dApp",
+    description: "This project is a decentralized application (dApp) demonstrating core DeFi staking mechanisms. It builds upon existing smart contracts: a custom ERC-20 token (LenoToken) with advanced features (access control, pausing, blacklist) and a Faucet contract for token distribution.",
+    image: mediaImg,
+    tags: ["React", "TypeScript", "TailwindCSS", "Ethers.js", "Web3-React", "Solidity"],
+    status: "Live",
+    link: "https://lenoai-stake-rewards-dapp.vercel.app/"
   },
   {
-    title: "AI-Powered Analytics Dashboard",
-    description: "Machine learning dashboard for business intelligence with predictive analytics, data visualization, and automated reporting.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    tags: ["Python", "React", "TensorFlow", "AWS"],
+    title: "LENOAI Faucet dApp",
+    description: "Built LENOAI Faucet dApp: An enterprise-grade solution showcasing custom ERC-20 (LenoToken) with advanced access control, pausing, and blacklisting. A smart contract faucet enables controlled token distribution on Sepolia with a cooldown. The intuitive React/TypeScript/Tailwind frontend integrates MetaMask for real-time balance and direct token requests. Demonstrates strong Solidity, Ethers.js, Web3-React, and dApp development skills.",
+    image: media2Img,
+    tags: ["React", "TypeScript", "TailwindCSS", "Ethers.js", "Web3-React", "Solidity"],
     status: "Live",
-    link: "#"
+    link: "https://leno-token-faucet.vercel.app/"
   },
   {
-    title: "Mobile Banking App",
-    description: "Secure mobile banking application with biometric authentication, real-time transactions, and comprehensive financial management tools.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-    tags: ["React Native", "Node.js", "Redis", "Microservices"],
+    title: "AceMyInterview",
+    description: "Developed Ace My Interview, an AI-powered platform designed to revolutionize interview preparation. It leverages advanced AI to provide personalized feedback on user responses, simulate realistic interview scenarios, and help users master the STAR method. Ace My Interview aims to boost confidence and improve performance for job seekers across various industries. (https://acemyinterview.net)",
+    image: media3Img,
+    tags: ["React", "AI Agents", "Node.js", "TypeScript", "TailwindCSS", "API"],
     status: "Live",
-    link: "#"
+    link: "https://acemyinterview.net"
   }
 ];
 

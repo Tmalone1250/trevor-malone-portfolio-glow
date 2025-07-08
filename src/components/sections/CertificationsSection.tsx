@@ -6,32 +6,32 @@ import { Badge } from '@/components/ui/badge';
 
 const certifications = [
   {
-    title: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    date: "2023",
+    title: "IBM Full Stack Software Developer Certification",
+    issuer: "Coursera (IBM)",
+    date: "2024",
     status: "Active",
-    description: "Professional level certification for designing distributed systems on AWS"
+    description: "Professional level certification for full stack software development."
   },
   {
-    title: "Google Cloud Professional Developer",
-    issuer: "Google Cloud",
-    date: "2023",
+    title: "IBM AI Developer Certification",
+    issuer: "Coursera (IBM)",
+    date: "2025",
     status: "Active", 
-    description: "Advanced certification for developing scalable applications on Google Cloud Platform"
+    description: "Advanced certification for developing AI applications."
   },
   {
-    title: "Certified Kubernetes Administrator",
-    issuer: "Cloud Native Computing Foundation",
-    date: "2022",
-    status: "Active",
-    description: "Expert-level certification for Kubernetes cluster administration"
+    title: "Blockchain Developer Professional Certificate",
+    issuer: "Coursera (University of New York at Buffalo)",
+    date: "2025",
+    status: "In Progress",
+    description: "Expert-level certification for blockchain development"
   },
   {
-    title: "React Developer Certification",
-    issuer: "Meta",
-    date: "2022",
-    status: "Active",
-    description: "Professional certification for advanced React development skills"
+    title: "IBM AI Engineering Professional Certificate",
+    issuer: "Coursera (IBM)",
+    date: "2025",
+    status: "In Progress",
+    description: "Professional certification for advanced AI engineering skills"
   }
 ];
 

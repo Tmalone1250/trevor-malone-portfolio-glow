@@ -18,48 +18,50 @@ export function AboutSection() {
               About Trevor
             </TextEffect>
           </div>
-          
-          <div>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              I'm a passionate full-stack developer with over 5 years of experience creating digital solutions 
-              that make a difference. I specialize in modern web technologies including React, Node.js, and cloud architecture.
-            </p>
-          </div>
 
-          <div>
-            <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, 
-              or sharing knowledge with the developer community. I believe in writing clean, maintainable code 
-              and creating user experiences that truly matter.
+          {/* --- REPLACED PARAGRAPHS START --- */}
+          <div className="text-xl text-muted-foreground mb-8 leading-relaxed text-left md:text-center"> {/* Adjusted text alignment */}
+            <p className="mb-4">
+              My name is Trevor Malone, and I am a dedicated Software and AI Engineer with a fervent passion for the transformative power of Blockchain technology. My career path has been shaped by a relentless curiosity and a drive to build sophisticated, intelligent systems from the ground up.
+            </p>
+            <p className="mb-4">
+              I possess a robust background in full-stack development, proficient in crafting dynamic user interfaces with React and TypeScript and architecting scalable backends using Python (FastAPI, Flask) and Node.js. This comprehensive skill set allows me to approach development holistically, from initial concept to deployment.
+            </p>
+            <p className="mb-4">
+              A significant part of my journey involves pioneering AI solutions. As the Open Source Project Lead for Leno AI, I designed and launched a modular multi-agent framework, demonstrating my capability to orchestrate complex AI behaviors, integrate diverse LLM APIs, and apply advanced prompt engineering techniques for precise, structured outputs. My contributions to projects like Marvel AI at Reality Agent Lab further highlight my practical experience in AI agent development.
+            </p>
+            <p>
+              Now, I am intensely focused on the Web3 space, actively pursuing certification through Coursera&apos;s Blockchain Developer courses. This builds upon my proven experience in smart contract development (Solidity), ERC-20 token creation (LENOAI, VANGAI on Ethereum testnet), and building interactive decentralized applications (dApps) with seamless MetaMask and Ethers.js integration. My goal is to leverage this unique blend of AI and blockchain expertise to innovate within the decentralized ecosystem, creating secure, efficient, and impactful Web3 solutions. I am eager to join a forward-thinking team where I can apply my skills to build the future of decentralized technology.
             </p>
           </div>
+          {/* --- REPLACED PARAGRAPHS END --- */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <motion.div 
+            <motion.div
               className="p-6 rounded-2xl border bg-card"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Projects Completed</div>
-            </motion.div>
-            
-            <motion.div 
-              className="p-6 rounded-2xl border bg-card"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
-              <div className="text-3xl font-bold text-primary mb-2">5+</div>
+              <div className="text-3xl font-bold text-primary mb-2">6+</div> {/* Updated to 6+ years from resume */}
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="p-6 rounded-2xl border bg-card"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
-              <div className="text-3xl font-bold text-primary mb-2">25+</div>
-              <div className="text-sm text-muted-foreground">Happy Clients</div>
+              <div className="text-3xl font-bold text-primary mb-2">5+</div> {/* Projects with significant AI/Blockchain focus */}
+              <div className="text-sm text-muted-foreground">AI & Web3 Projects</div>
+            </motion.div>
+
+            <motion.div
+              className="p-6 rounded-2xl border bg-card"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <div className="text-3xl font-bold text-primary mb-2">3+</div> {/* Certifications in relevant fields */}
+              <div className="text-sm text-muted-foreground">Specialized Certs</div>
             </motion.div>
           </div>
         </AnimatedGroup>
