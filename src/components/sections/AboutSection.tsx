@@ -8,7 +8,12 @@ export function AboutSection() {
     <section id="about" className="py-24 bg-background">
       <div className="mx-auto max-w-7xl px-6">
         <AnimatedGroup preset="blur-slide" className="max-w-4xl mx-auto text-center">
-          <div>
+          <div className="flex flex-col items-center justify-center">
+            <img
+              src="/media/portfolio_image_selfie.jpg"
+              alt="Trevor Malone"
+              className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary shadow-lg mb-6 mx-auto"
+            />
             <TextEffect
               per="word"
               as="h2"
