@@ -1,0 +1,249 @@
+import { motion } from 'framer-motion';
+import { AnimatedGroup } from '@/components/ui/animated-group';
+import { TextEffect } from '@/components/ui/text-effect';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { ArrowRight, ChevronLeft, ChevronRight, Home } from 'lucide-react';
+import { useState } from 'react';
+import mediaImg from '@/components/assets/media.png';
+import media2Img from '@/components/assets/media2.png';
+import media3Img from '@/components/assets/og-image.png';
+
+const allProjects = [
+  {
+    title: "Leno AI",
+    description: "Developed Leno AI, an open-source, modular multi-agent framework for building and testing advanced AI systems. It empowers developers and researchers to orchestrate intelligent agents, integrating with tools like Google's Agent Development Kit (ADK) and supporting real-world API connections.",
+    image: "https://github.com/Tmalone1250/lenoai/blob/main/media/logo.jpg?raw=true",
+    tags: ["React", "Node.js", "PostgreSQL", "Python", "FastAPI", "Flask", "TailwindCSS", "Google ADK", "API", "AI Agents", "Web3"],
+    status: "Live",
+    link: "https://lenoai.dev"
+  },
+  {
+    title: "LENOAI Stake Rewards dApp",
+    description: "This project is a decentralized application (dApp) demonstrating core DeFi staking mechanisms. It builds upon existing smart contracts: a custom ERC-20 token (LenoToken) with advanced features (access control, pausing, blacklist) and a Faucet contract for token distribution.",
+    image: mediaImg,
+    tags: ["React", "TypeScript", "TailwindCSS", "Ethers.js", "Web3-React", "Solidity"],
+    status: "Live",
+    link: "https://lenoai-stake-rewards-dapp.vercel.app/"
+  },
+  {
+    title: "LENOAI Faucet dApp",
+    description: "Built LENOAI Faucet dApp: An enterprise-grade solution showcasing custom ERC-20 (LenoToken) with advanced access control, pausing, and blacklisting. A smart contract faucet enables controlled token distribution on Sepolia with a cooldown.",
+    image: media2Img,
+    tags: ["React", "TypeScript", "TailwindCSS", "Ethers.js", "Web3-React", "Solidity"],
+    status: "Live",
+    link: "https://leno-token-faucet.vercel.app/"
+  },
+  {
+    title: "AceMyInterview",
+    description: "Developed Ace My Interview, an AI-powered platform designed to revolutionize interview preparation. It leverages advanced AI to provide personalized feedback on user responses, simulate realistic interview scenarios, and help users master the STAR method.",
+    image: media3Img,
+    tags: ["React", "AI Agents", "Node.js", "TypeScript", "TailwindCSS", "API"],
+    status: "Live",
+    link: "https://acemyinterview.net"
+  },
+  {
+    title: "E-Commerce Platform",
+    description: "Full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB database. Features include user authentication, product catalog, shopping cart, payment processing, and admin dashboard.",
+    image: mediaImg,
+    tags: ["React", "Node.js", "MongoDB", "Express", "Stripe", "JWT"],
+    status: "Live",
+    link: "#"
+  },
+  {
+    title: "Task Management App",
+    description: "A comprehensive task management application with real-time collaboration features. Built with React, Socket.io for real-time updates, and PostgreSQL for data persistence.",
+    image: media2Img,
+    tags: ["React", "Socket.io", "PostgreSQL", "Node.js", "TailwindCSS"],
+    status: "Live",
+    link: "#"
+  },
+  {
+    title: "Weather Dashboard",
+    description: "Interactive weather dashboard that displays current conditions and forecasts. Features location-based weather data, charts, and responsive design for all devices.",
+    image: media3Img,
+    tags: ["React", "Chart.js", "Weather API", "TailwindCSS", "Responsive"],
+    status: "Live",
+    link: "#"
+  },
+  {
+    title: "Blog CMS",
+    description: "Content management system for blogs with rich text editor, image uploads, SEO optimization, and user role management. Built with modern web technologies.",
+    image: mediaImg,
+    tags: ["React", "Node.js", "MongoDB", "Rich Text Editor", "SEO"],
+    status: "Live",
+    link: "#"
+  },
+  {
+    title: "Social Media Analytics",
+    description: "Analytics dashboard for social media metrics with data visualization, reporting features, and integration with multiple social platforms.",
+    image: media2Img,
+    tags: ["React", "D3.js", "API Integration", "Analytics", "Charts"],
+    status: "Live",
+    link: "#"
+  },
+  {
+    title: "Portfolio Website",
+    description: "Modern portfolio website with interactive animations, responsive design, and optimized performance. Built with React and Framer Motion.",
+    image: media3Img,
+    tags: ["React", "Framer Motion", "TailwindCSS", "Responsive", "Animations"],
+    status: "Live",
+    link: "#"
+  },
+  {
+    title: "Learning Management System",
+    description: "Comprehensive LMS platform with course creation, progress tracking, quizzes, and student management features.",
+    image: mediaImg,
+    tags: ["React", "Node.js", "PostgreSQL", "Video Streaming", "Quizzes"],
+    status: "In Development",
+    link: "#"
+  },
+  {
+    title: "Real Estate Platform",
+    description: "Property listing and management platform with advanced search filters, virtual tours, and agent management system.",
+    image: media2Img,
+    tags: ["React", "Maps API", "Image Gallery", "Search", "Filters"],
+    status: "Live",
+    link: "#"
+  }
+];
+
+const PROJECTS_PER_PAGE = 8;
+
+export default function Projects() {
+  const [currentPage, setCurrentPage] = useState(1);
+  
+  const totalPages = Math.ceil(allProjects.length / PROJECTS_PER_PAGE);
+  const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
+  const endIndex = startIndex + PROJECTS_PER_PAGE;
+  const currentProjects = allProjects.slice(startIndex, endIndex);
+
+  const goToPage = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="border-b">
+        <nav className="mx-auto max-w-7xl px-6 py-4">
+          <div className="flex items-center justify-between">
+            <Button asChild variant="ghost">
+              <a href="/" className="flex items-center gap-2">
+                <Home className="size-4" />
+                Back to Home
+              </a>
+            </Button>
+            <div className="text-sm text-muted-foreground">
+              {allProjects.length} Projects
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      {/* Main Content */}
+      <main className="mx-auto max-w-7xl px-6 py-16">
+        <div className="text-center mb-16">
+          <TextEffect
+            per="word"
+            as="h1"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8"
+            preset="blur"
+          >
+            All Projects
+          </TextEffect>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            A comprehensive showcase of my work spanning web applications, mobile solutions, and innovative digital experiences
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <AnimatedGroup preset="blur-slide" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
+          {currentProjects.map((project, index) => (
+            <motion.div
+              key={`${currentPage}-${index}`}
+              className="group bg-card rounded-2xl border overflow-hidden shadow-sm"
+              whileHover={{ scale: 1.02, y: -5 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute top-4 right-4">
+                  <Badge variant={project.status === "Live" ? "default" : "secondary"}>
+                    {project.status}
+                  </Badge>
+                </div>
+              </div>
+              
+              <div className="p-8">
+                <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.tags.map((tag, tagIndex) => (
+                    <Badge key={tagIndex} variant="outline" className="text-xs">
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
+                
+                <Button asChild className="group/btn">
+                  <a href={project.link}>
+                    View Project
+                    <ArrowRight className="ml-2 size-4 transition-transform group-hover/btn:translate-x-1" />
+                  </a>
+                </Button>
+              </div>
+            </motion.div>
+          ))}
+        </AnimatedGroup>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => goToPage(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+              <ChevronLeft className="size-4" />
+              Previous
+            </Button>
+            
+            <div className="flex items-center gap-1">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                <Button
+                  key={page}
+                  variant={currentPage === page ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => goToPage(page)}
+                  className="w-10"
+                >
+                  {page}
+                </Button>
+              ))}
+            </div>
+            
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => goToPage(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              Next
+              <ChevronRight className="size-4" />
+            </Button>
+          </div>
+        )}
+      </main>
+    </div>
+  );
+}

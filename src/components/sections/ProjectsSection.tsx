@@ -107,6 +107,15 @@ export function ProjectsSection() {
             </motion.div>
           ))}
         </AnimatedGroup>
+        
+        <div className="text-center mt-12">
+          <Button asChild variant="outline" size="lg">
+            <a href="/projects">
+              View All Projects
+              <ArrowRight className="ml-2 size-4" />
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );
