@@ -35,12 +35,12 @@ const projects = [
     link: "https://leno-token-faucet.vercel.app/"
   },
   {
-    title: "AceMyInterview",
-    description: "Developed Ace My Interview, an AI-powered platform designed to revolutionize interview preparation. It leverages advanced AI to provide personalized feedback on user responses, simulate realistic interview scenarios, and help users master the STAR method. Ace My Interview aims to boost confidence and improve performance for job seekers across various industries. (https://acemyinterview.net)",
-    image: media3Img,
-    tags: ["React", "AI Agents", "Node.js", "TypeScript", "TailwindCSS", "API"],
+    title: "DeFi Lending Pool",
+    description: "A decentralized finance (DeFi) application built on the Ethereum Sepolia testnet that allows users to earn interest on USDC deposits. This project showcases smart contract development in Solidity, per-user interest accounting, and a modern Web3 frontend with MetaMask integration. Users can deposit, withdraw partially or fully, and track real-time earnings from a simulated interest rate system.",
+    image: "/lovable-uploads/ada13442-bab8-4ee8-9aae-7924f931c658.png",
+    tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask", "Sepolia Testnet"],
     status: "Live",
-    link: "https://acemyinterview.net"
+    link: "#"
   }
 ];
 
