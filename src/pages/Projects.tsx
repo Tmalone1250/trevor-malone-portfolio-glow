@@ -49,6 +49,14 @@ const allProjects = [
     tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask", "Sepolia Testnet"],
     status: "Live",
     link: "#"
+  },
+  {
+    title: "DeFi Vault dApp",
+    description: "Designed and built Defi Vault dApp, a simulated DeFi yield farming protocol on the Ethereum Sepolia Testnet. This dApp allows users to deposit a test stablecoin (e.g., USDC), receive proportional vault shares in return, and earn simulated yield over time. The project demonstrates the fundamental mechanics of a real-world DeFi vault, including proportional share calculation, yield accrual, and the secure approve/transferFrom pattern. This serves as a proof-of-concept for a full-featured lending/yield protocol.",
+    image: "/lovable-uploads/fd8dcdfb-2aa5-4c64-b3e3-00df4d44e1a0.png",
+    tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask", "Sepolia Testnet", "ERC20 & Ownable"],
+    status: "Live",
+    link: "#"
   }
 ];
 

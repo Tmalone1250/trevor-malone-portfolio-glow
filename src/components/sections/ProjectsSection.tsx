@@ -27,12 +27,12 @@ const projects = [
     link: "https://lenoai-stake-rewards-dapp.vercel.app/"
   },
   {
-    title: "LENOAI Faucet dApp",
-    description: "Built LENOAI Faucet dApp: An enterprise-grade solution showcasing custom ERC-20 (LenoToken) with advanced access control, pausing, and blacklisting. A smart contract faucet enables controlled token distribution on Sepolia with a cooldown. The intuitive React/TypeScript/Tailwind frontend integrates MetaMask for real-time balance and direct token requests. Demonstrates strong Solidity, Ethers.js, Web3-React, and dApp development skills.",
-    image: media2Img,
-    tags: ["React", "TypeScript", "TailwindCSS", "Ethers.js", "Web3-React", "Solidity"],
+    title: "DeFi Vault dApp",
+    description: "Designed and built Defi Vault dApp, a simulated DeFi yield farming protocol on the Ethereum Sepolia Testnet. This dApp allows users to deposit a test stablecoin (e.g., USDC), receive proportional vault shares in return, and earn simulated yield over time. The project demonstrates the fundamental mechanics of a real-world DeFi vault, including proportional share calculation, yield accrual, and the secure approve/transferFrom pattern.",
+    image: "/lovable-uploads/fd8dcdfb-2aa5-4c64-b3e3-00df4d44e1a0.png",
+    tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask", "Sepolia Testnet", "ERC20 & Ownable"],
     status: "Live",
-    link: "https://leno-token-faucet.vercel.app/"
+    link: "#"
   },
   {
     title: "DeFi Lending Pool",
