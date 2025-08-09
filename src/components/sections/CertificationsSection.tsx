@@ -20,7 +20,7 @@ const certifications = [
     description: "Advanced certification for developing AI applications."
   },
   {
-    title: "Blockchain Developer Professional Certificate",
+    title: "DeFi (Decentralized Finance) For Everyone",
     issuer: "Coursera (University of New York at Buffalo)",
     date: "2025",
     status: "In Progress",
