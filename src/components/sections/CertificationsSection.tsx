@@ -23,14 +23,14 @@ const certifications = [
     title: "DeFi (Decentralized Finance) For Everyone",
     issuer: "Coursera (University of New York at Buffalo)",
     date: "2025",
-    status: "In Progress",
+    status: "Active",
     description: "Expert-level certification for blockchain development"
   },
   {
     title: "IBM AI Engineering Professional Certificate",
     issuer: "Coursera (IBM)",
     date: "2025",
-    status: "In Progress",
+    status: "Active",
     description: "Professional certification for advanced AI engineering skills"
   }
 ];
