@@ -24,7 +24,7 @@ const allProjects = [
     image: "/lovable-uploads/a3ee2e0d-0a45-4e7d-a3d3-791c01987781.png",
     tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask/Wallet Connect", "Sepolia Testnet", "OpenZeppelin", "Chainlink", "Uniswap V2 Router", "Wagmi", "RainbowKit"],
     status: "Live",
-    link: "#"
+    link: "https://auto-yield-dash.vercel.app/"
   },
   {
     title: "LENOAI Stake Rewards dApp",
