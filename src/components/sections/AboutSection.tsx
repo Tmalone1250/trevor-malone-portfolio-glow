@@ -1,25 +1,13 @@
-
 import { motion } from 'framer-motion';
 import { AnimatedGroup } from '@/components/ui/animated-group';
 import { TextEffect } from '@/components/ui/text-effect';
-
 export function AboutSection() {
-  return (
-    <section id="about" className="py-24 bg-background">
+  return <section id="about" className="py-24 bg-background">
       <div className="mx-auto max-w-7xl px-6">
         <AnimatedGroup preset="blur-slide" className="max-w-4xl mx-auto text-center">
           <div className="flex flex-col items-center justify-center">
-            <img
-              src="/media/portfolio_image_selfie.jpg"
-              alt="Trevor Malone"
-              className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary shadow-lg mb-6 mx-auto"
-            />
-            <TextEffect
-              per="word"
-              as="h2"
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8"
-              preset="blur"
-            >
+            <img src="/media/portfolio_image_selfie.jpg" alt="Trevor Malone" className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary shadow-lg mb-6 mx-auto" />
+            <TextEffect per="word" as="h2" className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8" preset="blur">
               About Trevor
             </TextEffect>
           </div>
@@ -42,35 +30,40 @@ export function AboutSection() {
           {/* --- REPLACED PARAGRAPHS END --- */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <motion.div
-              className="p-6 rounded-2xl border bg-card"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
+            <motion.div className="p-6 rounded-2xl border bg-card" whileHover={{
+            scale: 1.05
+          }} transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20
+          }}>
               <div className="text-3xl font-bold text-primary mb-2">6+</div> {/* Updated to 6+ years from resume */}
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </motion.div>
 
-            <motion.div
-              className="p-6 rounded-2xl border bg-card"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
-              <div className="text-3xl font-bold text-primary mb-2">5+</div> {/* Projects with significant AI/Blockchain focus */}
+            <motion.div className="p-6 rounded-2xl border bg-card" whileHover={{
+            scale: 1.05
+          }} transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20
+          }}>
+              <div className="text-3xl font-bold text-primary mb-2">2+</div> {/* Projects with significant AI/Blockchain focus */}
               <div className="text-sm text-muted-foreground">AI & Web3 Projects</div>
             </motion.div>
 
-            <motion.div
-              className="p-6 rounded-2xl border bg-card"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
+            <motion.div className="p-6 rounded-2xl border bg-card" whileHover={{
+            scale: 1.05
+          }} transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20
+          }}>
               <div className="text-3xl font-bold text-primary mb-2">3+</div> {/* Certifications in relevant fields */}
               <div className="text-sm text-muted-foreground">Specialized Certs</div>
             </motion.div>
           </div>
         </AnimatedGroup>
       </div>
-    </section>
-  );
+    </section>;
 }
