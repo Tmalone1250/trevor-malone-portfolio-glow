@@ -32,7 +32,7 @@ const projects = [
     image: "/lovable-uploads/fd8dcdfb-2aa5-4c64-b3e3-00df4d44e1a0.png",
     tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask", "Sepolia Testnet", "ERC20 & Ownable"],
     status: "Live",
-    link: "#"
+    link: "https://vaultshare.vercel.app/"
   },
   {
     title: "DeFi Lending Pool",
@@ -40,7 +40,7 @@ const projects = [
     image: "/lovable-uploads/ada13442-bab8-4ee8-9aae-7924f931c658.png",
     tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask", "Sepolia Testnet"],
     status: "Live",
-    link: "#"
+    link: "https://defi-yield-silk.vercel.app/"
   }
 ];
 

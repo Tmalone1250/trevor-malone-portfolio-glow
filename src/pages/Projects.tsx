@@ -64,7 +64,7 @@ const allProjects = [
     image: "/lovable-uploads/fd8dcdfb-2aa5-4c64-b3e3-00df4d44e1a0.png",
     tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask", "Sepolia Testnet", "ERC20 & Ownable"],
     status: "Live",
-    link: "#"
+    link: "https://vaultshare.vercel.app/"
   }
 ];
 
