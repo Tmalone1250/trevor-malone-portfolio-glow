@@ -19,6 +19,14 @@ const allProjects = [
     link: "https://lenoai.dev"
   },
   {
+    title: "Auto Yield DeFi Vault",
+    description: "AutoYield Vault is a decentralized application (dApp) built on the Ethereum Sepolia Testnet that automates yield farming strategies for stablecoins. Users can deposit USDC into a smart contract vault, which then invests into ETH via Uniswap V2 to capture market gains. The vault integrates Chainlink price feeds to automatically trigger profit-taking and stop-loss actions, converting holdings back to USDC when predefined thresholds are met. The system is designed for future scalability, with planned staking rewards and reinvestment logic for compounding returns.",
+    image: "/lovable-uploads/a3ee2e0d-0a45-4e7d-a3d3-791c01987781.png",
+    tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask/Wallet Connect", "Sepolia Testnet", "OpenZeppelin", "Chainlink", "Uniswap V2 Router", "Wagmi", "RainbowKit"],
+    status: "Live",
+    link: "#"
+  },
+  {
     title: "LENOAI Stake Rewards dApp",
     description: "This project is a decentralized application (dApp) demonstrating core DeFi staking mechanisms. It builds upon existing smart contracts: a custom ERC-20 token (LenoToken) with advanced features (access control, pausing, blacklist) and a Faucet contract for token distribution.",
     image: mediaImg,
