@@ -23,9 +23,7 @@ export function AboutSection() {
             <p className="mb-4">
               A significant part of my journey involves pioneering AI solutions. As the Open Source Project Lead for Leno AI, I designed and launched a modular multi-agent framework, demonstrating my capability to orchestrate complex AI behaviors, integrate diverse LLM APIs, and apply advanced prompt engineering techniques for precise, structured outputs. My contributions to projects like Marvel AI at Reality Agent Lab further highlight my practical experience in AI agent development.
             </p>
-            <p>
-              Now, I am intensely focused on the Web3 space, actively pursuing certification through Coursera&apos;s Blockchain Developer courses. This builds upon my proven experience in smart contract development (Solidity), ERC-20 token creation (LENOAI, VANGAI on Ethereum testnet), and building interactive decentralized applications (dApps) with seamless MetaMask and Ethers.js integration. My goal is to leverage this unique blend of AI and blockchain expertise to innovate within the decentralized ecosystem, creating secure, efficient, and impactful Web3 solutions. I am eager to join a forward-thinking team where I can apply my skills to build the future of decentralized technology.
-            </p>
+            <p>Now, I am intensely focused on the Web3 space, and have recently completed the DeFi (Decentralized Finance) For Everyone certification, through Coursera. This builds upon my proven experience in smart contract development (Solidity), ERC-20 token creation (LENOAI, VANGAI on Ethereum testnet), and building interactive decentralized applications (dApps) with seamless MetaMask and Ethers.js integration. My goal is to leverage this unique blend of AI and blockchain expertise to innovate within the decentralized ecosystem, creating secure, efficient, and impactful Web3 solutions. I am eager to join a forward-thinking team where I can apply my skills to build the future of decentralized technology.</p>
           </div>
           {/* --- REPLACED PARAGRAPHS END --- */}
 
