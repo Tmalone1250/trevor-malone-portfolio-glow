@@ -15,7 +15,7 @@ const allProjects = [
     description: "Aetherium RPG is a full-stack, \"Final Fantasy-like\" role-playing game that seamlessly integrates traditional gaming mechanics with a decentralized Web3 economy. This project demonstrates a complete understanding of blockchain-based asset ownership, from in-game currency to unique player avatars. The game features a cohesive stat system, a turn-based combat engine, and a player-driven economy built on Solidity smart contracts. Key features include true digital ownership through NFTs, dynamic economy with ERC-20 tokens, player progression systems, turn-based combat, and decentralized rewards.",
     image: "/lovable-uploads/af81e239-fa48-4f7e-8338-93cae74128be.png",
     tags: ["React", "TypeScript", "Web3.js", "Ethers.js", "Node.js", "Express.js", "Supabase", "Solidity", "OpenZeppelin", "Hardhat", "MetaMask"],
-    status: "Live",
+    status: "In Progress",
     link: "#"
   },
   {
