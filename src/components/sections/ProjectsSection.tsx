@@ -19,12 +19,12 @@ const projects = [
     link: "https://lenoai.dev"
   },
   {
-    title: "Auto Yield DeFi Vault",
-    description: "AutoYield Vault is a decentralized application (dApp) built on the Ethereum Sepolia Testnet that automates yield farming strategies for stablecoins. Users can deposit USDC into a smart contract vault, which then invests into ETH via Uniswap V2 to capture market gains. The vault integrates Chainlink price feeds to automatically trigger profit-taking and stop-loss actions, converting holdings back to USDC when predefined thresholds are met. The system is designed for future scalability, with planned staking rewards and reinvestment logic for compounding returns.",
-    image: "/lovable-uploads/a3ee2e0d-0a45-4e7d-a3d3-791c01987781.png",
-    tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask/Wallet Connect", "Sepolia Testnet", "OpenZeppelin", "Chainlink", "Uniswap V2 Router", "Wagmi", "RainbowKit"],
+    title: "Aetherium RPG",
+    description: "Aetherium RPG is a full-stack, \"Final Fantasy-like\" role-playing game that seamlessly integrates traditional gaming mechanics with a decentralized Web3 economy. This project demonstrates a complete understanding of blockchain-based asset ownership, from in-game currency to unique player avatars. The game features a cohesive stat system, a turn-based combat engine, and a player-driven economy built on Solidity smart contracts. Key features include true digital ownership through NFTs, dynamic economy with ERC-20 tokens, player progression systems, turn-based combat, and decentralized rewards.",
+    image: "/lovable-uploads/af81e239-fa48-4f7e-8338-93cae74128be.png",
+    tags: ["React", "TypeScript", "Web3.js", "Ethers.js", "Node.js", "Express.js", "Supabase", "Solidity", "OpenZeppelin", "Hardhat", "MetaMask"],
     status: "Live",
-    link: "https://auto-yield-dash.vercel.app/"
+    link: "#"
   },
   {
     title: "DeFi Vault dApp",
