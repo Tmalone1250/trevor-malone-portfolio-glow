@@ -16,7 +16,7 @@ const certifications = [
     title: "IBM AI Developer Certification",
     issuer: "Coursera (IBM)",
     date: "2025",
-    status: "Active", 
+    status: "In Progress", 
     description: "Advanced certification for developing AI applications."
   },
   {
