@@ -32,6 +32,13 @@ const certifications = [
     date: "2025",
     status: "Active",
     description: "Professional certification for advanced AI engineering skills"
+  },
+  {
+    title: "Web3 Solidity Developer",
+    issuer: "Metana.io",
+    date: "2025",
+    status: "In Progress",
+    description: "Expert-level certification for blockchain development and DeFi (Decentralized Finance)."
   }
 ];
 
