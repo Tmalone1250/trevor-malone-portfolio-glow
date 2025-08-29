@@ -57,7 +57,7 @@ export function AboutSection() {
             stiffness: 300,
             damping: 20
           }}>
-              <div className="text-3xl font-bold text-primary mb-2">3+</div> {/* Certifications in relevant fields */}
+              <div className="text-3xl font-bold text-primary mb-2">4+</div> {/* Certifications in relevant fields */}
               <div className="text-sm text-muted-foreground">Specialized Certs</div>
             </motion.div>
           </div>
