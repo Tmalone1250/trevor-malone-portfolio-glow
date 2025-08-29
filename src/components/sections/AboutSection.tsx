@@ -46,7 +46,7 @@ export function AboutSection() {
             stiffness: 300,
             damping: 20
           }}>
-              <div className="text-3xl font-bold text-primary mb-2">2+</div> {/* Projects with significant AI/Blockchain focus */}
+              <div className="text-3xl font-bold text-primary mb-2">8+</div> {/* Projects with significant AI/Blockchain focus */}
               <div className="text-sm text-muted-foreground">AI & Web3 Projects</div>
             </motion.div>
 
