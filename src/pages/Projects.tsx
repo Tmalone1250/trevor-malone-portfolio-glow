@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight, ChevronLeft, ChevronRight, Home } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import mediaImg from '@/components/assets/media.png';
 import media2Img from '@/components/assets/media2.png';
 import media3Img from '@/components/assets/og-image.png';
@@ -98,10 +99,10 @@ export default function Projects() {
         <nav className="mx-auto max-w-7xl px-6 py-4">
           <div className="flex items-center justify-between">
             <Button asChild variant="ghost">
-              <a href="/" className="flex items-center gap-2">
+              <Link to="/" className="flex items-center gap-2">
                 <Home className="size-4" />
                 Back to Home
-              </a>
+              </Link>
             </Button>
             <div className="text-sm text-muted-foreground">
               {allProjects.length} Projects
