@@ -6,7 +6,7 @@ export function AboutSection() {
       <div className="mx-auto max-w-7xl px-6">
         <AnimatedGroup preset="blur-slide" className="max-w-4xl mx-auto text-center">
           <div className="flex flex-col items-center justify-center">
-            <img src="/lovable-uploads/90d8bb69-1435-4fb9-bc2f-d6c68cf90109.png" alt="Trevor Malone" className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary shadow-lg mb-6 mx-auto" />
+            <img src="/lovable-uploads/90d8bb69-1435-4fb9-bc2f-d6c68cf90109.png" alt="Trevor Malone" className="w-36 h-36 md:w-48 md:h-48 rounded-full object-cover object-[center_20%] border-4 border-primary shadow-lg mb-6 mx-auto" />
             <TextEffect per="word" as="h2" className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8" preset="blur">
               About Trevor
             </TextEffect>
