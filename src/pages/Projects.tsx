@@ -12,6 +12,14 @@ import media3Img from '@/components/assets/og-image.png';
 
 const allProjects = [
   {
+    title: "Alchemy Guild",
+    description: "A DeFi yield generation platform that combines NFT staking with automated Uniswap V3 liquidity provision. Mint elemental NFTs across three rarity tiers (Lead, Silver, Gold), stake them in the Yield Vault, and earn USDC from trading fees. Features 18 unique elements with different staking weights (10x for Tier 1, 30x for Tier 2, 100x for Tier 3), automated yield distribution, instant claims with 20% USDC reserve, and a 24/7 autonomous bot that generates volume and manages liquidity. Built on Ethereum Sepolia with verified smart contracts including ElementNFT, YieldVault, Alchemist, and Treasury.",
+    image: "/alchemy-guild-logo.png",
+    tags: ["Solidity", "React", "TypeScript", "Ethers.js", "Uniswap V3", "NFT", "DeFi", "RainbowKit", "Wagmi", "TailwindCSS", "Foundry", "OpenZeppelin"],
+    status: "Live",
+    link: "https://alchemy-vault.vercel.app"
+  },
+  {
     title: "Aetherium RPG",
     description: "Aetherium RPG is a full-stack, \"Final Fantasy-like\" role-playing game that seamlessly integrates traditional gaming mechanics with a decentralized Web3 economy. This project demonstrates a complete understanding of blockchain-based asset ownership, from in-game currency to unique player avatars. The game features a cohesive stat system, a turn-based combat engine, and a player-driven economy built on Solidity smart contracts. Key features include true digital ownership through NFTs, dynamic economy with ERC-20 tokens, player progression systems, turn-based combat, and decentralized rewards.",
     image: "/lovable-uploads/af81e239-fa48-4f7e-8338-93cae74128be.png",
@@ -81,7 +89,7 @@ const PROJECTS_PER_PAGE = 8;
 
 export default function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
-  
+
   const totalPages = Math.ceil(allProjects.length / PROJECTS_PER_PAGE);
   const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
   const endIndex = startIndex + PROJECTS_PER_PAGE;
@@ -148,13 +156,13 @@ export default function Projects() {
                   </Badge>
                 </div>
               </div>
-              
+
               <div className="p-8">
                 <h3 className="text-2xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, tagIndex) => (
                     <Badge key={tagIndex} variant="outline" className="text-xs">
@@ -162,7 +170,7 @@ export default function Projects() {
                     </Badge>
                   ))}
                 </div>
-                
+
                 <Button asChild className="group/btn">
                   <a href={project.link}>
                     View Project
@@ -186,7 +194,7 @@ export default function Projects() {
               <ChevronLeft className="size-4" />
               Previous
             </Button>
-            
+
             <div className="flex items-center gap-1">
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                 <Button
@@ -200,7 +208,7 @@ export default function Projects() {
                 </Button>
               ))}
             </div>
-            
+
             <Button
               variant="outline"
               size="sm"
