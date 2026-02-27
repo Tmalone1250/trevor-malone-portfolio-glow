@@ -27,12 +27,12 @@ const projects = [
     link: "https://alchemy-vault.vercel.app"
   },
   {
-    title: "DeFi Vault dApp",
-    description: "Designed and built Defi Vault dApp, a simulated DeFi yield farming protocol on the Ethereum Sepolia Testnet. This dApp allows users to deposit a test stablecoin (e.g., USDC), receive proportional vault shares in return, and earn simulated yield over time. The project demonstrates the fundamental mechanics of a real-world DeFi vault, including proportional share calculation, yield accrual, and the secure approve/transferFrom pattern.",
-    image: "/lovable-uploads/fd8dcdfb-2aa5-4c64-b3e3-00df4d44e1a0.png",
-    tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask", "Sepolia Testnet", "ERC20 & Ownable"],
+    title: "KinetiFi (Autonomous DeFi Orchestrator)",
+    description: "A modular Agentic framework that separates Discovery (Off-chain AI) from Execution (On-chain Intents). It solves the \"lazy capital\" problem by automating rotation of positions. Overcame hurdles like gasless onboarding via a custom Relayer, deterministic Smart Account identity, and 24-hour Intent-based security windows. Integrated Zerion API via a custom Base64-encoded Edge Proxy.",
+    image: "/kinetifi-hero.png",
+    tags: ["Solidity", "Foundry", "Python", "FastAPI", "Web3.py", "React", "Next.js", "Wagmi", "Shadcn"],
     status: "Live",
-    link: "https://vaultshare.vercel.app/"
+    link: "#"
   },
   {
     title: "DeFi Lending Pool",

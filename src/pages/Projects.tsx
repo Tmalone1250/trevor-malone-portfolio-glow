@@ -12,6 +12,14 @@ import media3Img from '@/components/assets/og-image.png';
 
 const allProjects = [
   {
+    title: "KinetiFi",
+    description: "An autonomous DeFi orchestrator designed to eliminate \"lazy capital\" through a modular agentic framework. It separates off-chain AI discovery from on-chain intent execution, overcoming core hurdles like gasless onboarding via a custom Relayer/Faucet, deterministic identity with Factory-pattern Smart Accounts, and intent-based security with 24-hour authorization windows. Featured a Base64-encoded Edge Proxy to solve complex Zerion API auth and CORS issues.",
+    image: "/kinetifi-hero.png",
+    tags: ["Solidity", "Foundry", "Python", "FastAPI", "Web3.py", "React", "Next.js", "Wagmi", "Shadcn", "DeFi", "AI Agents"],
+    status: "Live",
+    link: "https://kinetifi.xyz"
+  },
+  {
     title: "Alchemy Guild",
     description: "A DeFi yield generation platform that combines NFT staking with automated Uniswap V3 liquidity provision. Mint elemental NFTs across three rarity tiers (Lead, Silver, Gold), stake them in the Yield Vault, and earn USDC from trading fees. Features 18 unique elements with different staking weights (10x for Tier 1, 30x for Tier 2, 100x for Tier 3), automated yield distribution, instant claims with 20% USDC reserve, and a 24/7 autonomous bot that generates volume and manages liquidity. Built on Ethereum Sepolia with verified smart contracts including ElementNFT, YieldVault, Alchemist, and Treasury.",
     image: "/alchemy-guild-logo.png",
