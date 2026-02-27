@@ -32,7 +32,7 @@ export function AboutSection() {
             <span className="text-primary font-semibold block mb-2">Decentralized Finance & Web3</span>
             I am deeply immersed in the Base and Ethereum ecosystems, focusing on Account Abstraction (ERC-4337) and the ERC-4626 yield-bearing vault standard. My recent work includes:
             <ul className="mt-4 space-y-3 list-none">
-              <li>• <strong>KinetiFi:</strong> An autonomous DeFi orchestrator featuring a "Sandbox vs. Arena" simulation environment.</li>
+              <li>• <strong>KinetiFi:</strong> An autonomous DeFi orchestrator featuring a "Sandbox vs. Production" simulation environment.</li>
               <li>• <strong>Alchemy Guild:</strong> A gamified DeFi dApp utilizing elemental-themed NFTs to optimize liquidity vault positions.</li>
               <li>• <strong>Smart Contract Engineering:</strong> Expertise in Solidity and Foundry, focusing on modular session keys that enable agentic autonomy without compromising self-custody.</li>
             </ul>
