@@ -13,17 +13,34 @@ export function AboutSection() {
         </div>
 
         {/* --- REPLACED PARAGRAPHS START --- */}
-        <div className="text-xl text-muted-foreground mb-8 leading-relaxed text-left md:text-center"> {/* Adjusted text alignment */}
-          <p className="mb-4">
-            My name is Trevor Malone, and I am a dedicated Software and AI Engineer with a fervent passion for the transformative power of Blockchain technology. My career path has been shaped by a relentless curiosity and a drive to build sophisticated, intelligent systems from the ground up.
+        <div className="text-xl text-muted-foreground mb-8 leading-relaxed text-left md:text-center">
+          <p className="mb-6">
+            My name is Trevor Malone, and I am a Software and AI Engineer specializing in the intersection of <strong>Autonomous Agents</strong> and <strong>Intent-Based DeFi Infrastructure</strong>. My career is driven by a singular mission: to reduce the cognitive overhead of the blockchain by building intelligent, self-optimizing systems that bridge the gap between AI reasoning and on-chain execution.
           </p>
-          <p className="mb-4">
-            I possess a robust background in full-stack development, proficient in crafting dynamic user interfaces with React and TypeScript and architecting scalable backends using Python (FastAPI, Flask) and Node.js. This comprehensive skill set allows me to approach development holistically, from initial concept to deployment.
+
+          <p className="mb-6">
+            <span className="text-primary font-semibold block mb-2">The Full-Stack Architect</span>
+            I possess a robust background in full-stack engineering, crafting high-fidelity user interfaces with React and TypeScript while architecting scalable, high-concurrency backends using Python (FastAPI) and Node.js. This holistic approach allows me to manage the entire lifecycle of a protocol—from deterministic smart account deployment to real-time portfolio visualization.
           </p>
-          <p className="mb-4">
-            A significant part of my journey involves pioneering AI solutions. As the Open Source Project Lead for Leno AI, I designed and launched a modular multi-agent framework, demonstrating my capability to orchestrate complex AI behaviors, integrate diverse LLM APIs, and apply advanced prompt engineering techniques for precise, structured outputs. My contributions to projects like Marvel AI at Reality Agent Lab further highlight my practical experience in AI agent development.
+
+          <p className="mb-6">
+            <span className="text-primary font-semibold block mb-2">Pioneering AI Orchestration</span>
+            As the creator and Open Source Project Lead for <strong>Leno AI</strong>, I launched a modular multi-agent framework designed to orchestrate complex AI behaviors across diverse LLM APIs. I have applied this expertise to develop autonomous financial guardians like <strong>KinetiFi</strong>, which utilize specialized agents for multichain yield discovery and risk-adjusted capital rotation. My work at Reality Agent Lab on projects like Marvel AI further solidified my ability to deliver precise, structured outputs for mission-critical applications.
           </p>
-          <p>Now, I am intensely focused on the Web3 space, and have recently completed the DeFi (Decentralized Finance) For Everyone certification, through Coursera. This builds upon my proven experience in smart contract development (Solidity), ERC-20 token creation (LENOAI, VANGAI on Ethereum testnet), and building interactive decentralized applications (dApps) with seamless MetaMask and Ethers.js integration. My goal is to leverage this unique blend of AI and blockchain expertise to innovate within the decentralized ecosystem, creating secure, efficient, and impactful Web3 solutions. I am eager to join a forward-thinking team where I can apply my skills to build the future of decentralized technology.</p>
+
+          <p className="mb-6">
+            <span className="text-primary font-semibold block mb-2">Decentralized Finance & Web3</span>
+            I am deeply immersed in the Base and Ethereum ecosystems, focusing on Account Abstraction (ERC-4337) and the ERC-4626 yield-bearing vault standard. My recent work includes:
+            <ul className="mt-4 space-y-3 list-none">
+              <li>• <strong>KinetiFi:</strong> An autonomous DeFi orchestrator featuring a "Sandbox vs. Arena" simulation environment.</li>
+              <li>• <strong>Alchemy Guild:</strong> A gamified DeFi dApp utilizing elemental-themed NFTs to optimize liquidity vault positions.</li>
+              <li>• <strong>Smart Contract Engineering:</strong> Expertise in Solidity and Foundry, focusing on modular session keys that enable agentic autonomy without compromising self-custody.</li>
+            </ul>
+          </p>
+
+          <p>
+            I am focused on building <strong>"Invisible Finance"</strong>—secure, efficient, and impactful Web3 solutions where AI handles the heavy lifting of the decentralized ecosystem. I am eager to collaborate with forward-thinking teams to architect the future of autonomous technology.
+          </p>
         </div>
         {/* --- REPLACED PARAGRAPHS END --- */}
 
