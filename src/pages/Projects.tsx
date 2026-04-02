@@ -16,8 +16,8 @@ const allProjects = [
     description: "A full-stack automation experiment that bridges the gap between LLM reasoning and blockchain finality. I built this to demonstrate a Sovereign Execution model where an AI agent scans the ecosystem for yield and generates \"Intents\" for a smart vault to fulfill. The architecture features a FastAPI backend for agentic logic and a Next.js/Wagmi frontend that visualizes real-time \"Efficiency Scores.\" It successfully overcomes typical DeFi hurdles like complex onboarding through Account Abstraction and deterministic identity.",
     image: "/kinetifi-hero.png",
     tags: ["Solidity", "Foundry", "Python", "FastAPI", "Web3.py", "React", "Next.js", "Wagmi", "Shadcn", "DeFi", "AI Agents"],
-    status: "Live",
-    link: "https://kinetifi.xyz"
+    status: "In Progress",
+    link: "#"
   },
   {
     title: "Alchemy Guild",
