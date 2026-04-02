@@ -13,7 +13,7 @@ import media3Img from '@/components/assets/og-image.png';
 const allProjects = [
   {
     title: "KinetiFi",
-    description: "An autonomous DeFi orchestrator designed to eliminate \"lazy capital\" through a modular agentic framework. It separates off-chain AI discovery from on-chain intent execution, overcoming core hurdles like gasless onboarding via a custom Relayer/Faucet, deterministic identity with Factory-pattern Smart Accounts, and intent-based security with 24-hour authorization windows. Featured a Base64-encoded Edge Proxy to solve complex Zerion API auth and CORS issues.",
+    description: "A full-stack automation experiment that bridges the gap between LLM reasoning and blockchain finality. I built this to demonstrate a Sovereign Execution model where an AI agent scans the ecosystem for yield and generates \"Intents\" for a smart vault to fulfill. The architecture features a FastAPI backend for agentic logic and a Next.js/Wagmi frontend that visualizes real-time \"Efficiency Scores.\" It successfully overcomes typical DeFi hurdles like complex onboarding through Account Abstraction and deterministic identity.",
     image: "/kinetifi-hero.png",
     tags: ["Solidity", "Foundry", "Python", "FastAPI", "Web3.py", "React", "Next.js", "Wagmi", "Shadcn", "DeFi", "AI Agents"],
     status: "Live",
