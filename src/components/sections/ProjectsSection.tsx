@@ -32,7 +32,7 @@ const projects = [
     image: "/kinetifi-hero.png",
     tags: ["Solidity", "Foundry", "Python", "FastAPI", "Web3.py", "React", "Next.js", "Wagmi", "Shadcn"],
     status: "In Progress",
-    link: "#"
+    link: "https://github.com/Tmalone1250/kineti-fi"
   },
   {
     title: "DeFi Lending Pool",

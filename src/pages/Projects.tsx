@@ -17,7 +17,7 @@ const allProjects = [
     image: "/kinetifi-hero.png",
     tags: ["Solidity", "Foundry", "Python", "FastAPI", "Web3.py", "React", "Next.js", "Wagmi", "Shadcn", "DeFi", "AI Agents"],
     status: "In Progress",
-    link: "#"
+    link: "https://github.com/Tmalone1250/kineti-fi"
   },
   {
     title: "Alchemy Guild",
