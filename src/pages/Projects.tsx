@@ -73,7 +73,7 @@ const allProjects = [
     image: media3Img,
     tags: ["React", "AI Agents", "Node.js", "TypeScript", "TailwindCSS", "API"],
     status: "Live",
-    link: "https://acemyinterview.net"
+    link: "https://acemyinterview.vercel.app/"
   },
   {
     title: "DeFi Lending Pool",
