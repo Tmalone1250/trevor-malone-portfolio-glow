@@ -35,12 +35,12 @@ const projects = [
     link: "https://github.com/Tmalone1250/kineti-fi"
   },
   {
-    title: "DeFi Lending Pool",
-    description: "A decentralized finance (DeFi) application built on the Ethereum Sepolia testnet that allows users to earn interest on USDC deposits. This project showcases smart contract development in Solidity, per-user interest accounting, and a modern Web3 frontend with MetaMask integration. Users can deposit, withdraw partially or fully, and track real-time earnings from a simulated interest rate system.",
-    image: "/lovable-uploads/ada13442-bab8-4ee8-9aae-7924f931c658.png",
-    tags: ["Solidity", "React", "TailwindCSS", "Ethers.js", "MetaMask", "Sepolia Testnet"],
+    title: "Auto-Tensor",
+    description: "Auto-Tensor is a high-performance, multi-agent AI ecosystem engineered to automate complex software engineering workflows and repository audits. Built for surgical precision, the platform orchestrates specialized agents—Scout, Coder, and Reviewer—that autonomously identify vulnerabilities in large-scale codebases, generate technical fix blueprints, and coordinate pull requests via the GitHub API.",
+    image: "/auto-tensor.png",
+    tags: ["React", "FastAPI", "Python", "TailwindCSS", "GitHub API", "AI Agents", "Nginx"],
     status: "Live",
-    link: "https://defi-yield-silk.vercel.app/"
+    link: "https://github.com/tmalone1250/auto-tensor"
   }
 ];
 

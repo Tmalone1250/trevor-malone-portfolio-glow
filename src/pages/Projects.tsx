@@ -12,6 +12,14 @@ import media3Img from '@/components/assets/og-image.png';
 
 const allProjects = [
   {
+    title: "Auto-Tensor",
+    description: "Auto-Tensor is a high-performance, multi-agent AI ecosystem engineered to automate complex software engineering workflows and repository audits. Built for surgical precision, the platform orchestrates specialized agents—Scout, Coder, and Reviewer—that autonomously identify vulnerabilities in large-scale codebases, generate technical fix blueprints, and coordinate pull requests via the GitHub API. It features a real-time telemetry dashboard, a custom \"Stealth Protocol\" for API resilience, and automated technical documentation sourcing, moving beyond simple automation into true autonomous development.",
+    image: "/auto-tensor.png",
+    tags: ["React", "Tailwind CSS", "Python 3.12", "FastAPI", "Uvicorn", "RESTful API", "SSL", "Nginx", "PM2", "GitHub API", "AI Agents"],
+    status: "Live",
+    link: "https://github.com/tmalone1250/auto-tensor"
+  },
+  {
     title: "KinetiFi",
     description: "A full-stack automation experiment that bridges the gap between LLM reasoning and blockchain finality. I built this to demonstrate a Sovereign Execution model where an AI agent scans the ecosystem for yield and generates \"Intents\" for a smart vault to fulfill. The architecture features a FastAPI backend for agentic logic and a Next.js/Wagmi frontend that visualizes real-time \"Efficiency Scores.\" It successfully overcomes typical DeFi hurdles like complex onboarding through Account Abstraction and deterministic identity.",
     image: "/kinetifi-hero.png",
