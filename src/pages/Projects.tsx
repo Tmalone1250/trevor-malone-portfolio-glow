@@ -12,6 +12,14 @@ import media3Img from '@/components/assets/og-image.png';
 
 const allProjects = [
   {
+    title: "Snorkel AI — Project Terminus",
+    description: "Engineered multi-container Docker environments for Project Terminus, Snorkel AI's benchmark suite for evaluating AI agent performance on real-world system administration and debugging tasks. Developed 5+ step 'Milestone' tasks requiring complex terminal interaction, reasoning, and error recovery — significantly advancing AI benchmarking standards. Implemented strict CI/CD validation protocols for task submissions, utilizing static analysis and dynamic evaluation with 'Oracle' and 'NOP' agents to ensure benchmark integrity. Authored comprehensive technical specifications and diagnostic rubrics, identifying 'phantom specs' and ensuring qualitative evaluation of AI traces.",
+    image: "/snorkel-terminus.png",
+    tags: ["Python", "Bash/Shell", "Docker", "Docker Compose", "uv", "Git", "Pytest", "LLM Evaluation", "Agentic Workflows", "Prompt Engineering", "System Administration", "API Integration"],
+    status: "Contract",
+    link: "https://snorkel.ai"
+  },
+  {
     title: "Auto-Tensor",
     description: "Auto-Tensor is a high-performance, multi-agent AI ecosystem engineered to automate complex software engineering workflows and repository audits. Built for surgical precision, the platform orchestrates specialized agents—Scout, Coder, and Reviewer—that autonomously identify vulnerabilities in large-scale codebases, generate technical fix blueprints, and coordinate pull requests via the GitHub API. It features a real-time telemetry dashboard, a custom \"Stealth Protocol\" for API resilience, and automated technical documentation sourcing, moving beyond simple automation into true autonomous development.",
     image: "/auto-tensor.png",
@@ -167,8 +175,11 @@ export default function Projects() {
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute top-4 right-4">
-                  <Badge variant={project.status === "Live" ? "default" : "secondary"}>
-                    {project.status}
+                  <Badge
+                    variant={project.status === "Live" ? "default" : "secondary"}
+                    className={project.status === "Contract" ? "bg-violet-600 text-white border-violet-600" : ""}
+                  >
+                    {project.status === "Contract" ? "🏢 Contract" : project.status}
                   </Badge>
                 </div>
               </div>

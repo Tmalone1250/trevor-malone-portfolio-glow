@@ -35,12 +35,12 @@ const projects = [
     link: "https://github.com/Tmalone1250/kineti-fi"
   },
   {
-    title: "Auto-Tensor",
-    description: "Auto-Tensor is a high-performance, multi-agent AI ecosystem engineered to automate complex software engineering workflows and repository audits. Built for surgical precision, the platform orchestrates specialized agents—Scout, Coder, and Reviewer—that autonomously identify vulnerabilities in large-scale codebases, generate technical fix blueprints, and coordinate pull requests via the GitHub API.",
-    image: "/auto-tensor.png",
-    tags: ["React", "FastAPI", "Python", "TailwindCSS", "GitHub API", "AI Agents", "Nginx"],
-    status: "Live",
-    link: "https://github.com/tmalone1250/auto-tensor"
+    title: "Snorkel AI — Project Terminus",
+    description: "Engineered multi-container Docker environments for Project Terminus, Snorkel AI's benchmark suite for evaluating AI agent performance on real-world system administration tasks. Developed 5+ step 'Milestone' tasks requiring complex terminal interaction, reasoning, and error recovery. Implemented strict CI/CD validation with 'Oracle' and 'NOP' agents to ensure benchmark integrity, and authored comprehensive technical specifications and diagnostic rubrics for qualitative AI trace evaluation.",
+    image: "/snorkel-terminus.png",
+    tags: ["Python", "Bash/Shell", "Docker", "Docker Compose", "Pytest", "LLM Evaluation", "Agentic Workflows"],
+    status: "Contract",
+    link: "https://snorkel.ai"
   }
 ];
 
@@ -77,8 +77,11 @@ export function ProjectsSection() {
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute top-4 right-4">
-                  <Badge variant={project.status === "Live" ? "default" : "secondary"}>
-                    {project.status}
+                  <Badge
+                    variant={project.status === "Live" ? "default" : "secondary"}
+                    className={project.status === "Contract" ? "bg-violet-600 text-white border-violet-600" : ""}
+                  >
+                    {project.status === "Contract" ? "🏢 Contract" : project.status}
                   </Badge>
                 </div>
               </div>
