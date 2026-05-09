@@ -36,7 +36,7 @@ const projects = [
   },
   {
     title: "Snorkel AI — Project Terminus",
-    description: "Engineered multi-container Docker environments for Project Terminus, Snorkel AI's benchmark suite for evaluating AI agent performance on real-world system administration tasks. Developed 5+ step 'Milestone' tasks requiring complex terminal interaction, reasoning, and error recovery. Implemented strict CI/CD validation with 'Oracle' and 'NOP' agents to ensure benchmark integrity, and authored comprehensive technical specifications and diagnostic rubrics for qualitative AI trace evaluation.",
+    description: "Contributing to the development of advanced evaluation frameworks for autonomous AI agents. Engineers complex, multi-step software engineering scenarios to assess LLM reasoning and problem-solving capabilities. Builds isolated, reproducible test environments using Docker and Docker Compose for secure agentic workflow execution. Develops deterministic testing suites and verification scripts in Python and Bash, and conducts rigorous quality assessments focused on technical accuracy, environment stability, and documentation clarity.",
     image: "/snorkel-terminus.png",
     tags: ["Python", "Bash/Shell", "Docker", "Docker Compose", "Pytest", "LLM Evaluation", "Agentic Workflows"],
     status: "Contract",

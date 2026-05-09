@@ -13,7 +13,7 @@ import media3Img from '@/components/assets/og-image.png';
 const allProjects = [
   {
     title: "Snorkel AI — Project Terminus",
-    description: "Engineered multi-container Docker environments for Project Terminus, Snorkel AI's benchmark suite for evaluating AI agent performance on real-world system administration and debugging tasks. Developed 5+ step 'Milestone' tasks requiring complex terminal interaction, reasoning, and error recovery — significantly advancing AI benchmarking standards. Implemented strict CI/CD validation protocols for task submissions, utilizing static analysis and dynamic evaluation with 'Oracle' and 'NOP' agents to ensure benchmark integrity. Authored comprehensive technical specifications and diagnostic rubrics, identifying 'phantom specs' and ensuring qualitative evaluation of AI traces.",
+    description: "Contributing to the development of advanced evaluation frameworks for autonomous AI agents. Engineers complex, multi-step software engineering scenarios to assess the reasoning and problem-solving capabilities of Large Language Models (LLMs). Builds isolated, reproducible test environments using Docker and Docker Compose to ensure secure, self-contained execution of agentic workflows. Develops deterministic testing suites and verification scripts in Python and Bash to validate the accuracy and safety of AI-generated solutions, while conducting rigorous quality assessments focused on technical accuracy, environment stability, and documentation clarity.",
     image: "/snorkel-terminus.png",
     tags: ["Python", "Bash/Shell", "Docker", "Docker Compose", "uv", "Git", "Pytest", "LLM Evaluation", "Agentic Workflows", "Prompt Engineering", "System Administration", "API Integration"],
     status: "Contract",
